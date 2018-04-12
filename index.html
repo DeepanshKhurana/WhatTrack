@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <title>What Track?</title>
+        <style media="screen">
+            html, body {
+                margin:0;
+                padding:0;
+                font-family: 'Roboto Condensed', sans-serif;
+
+            }
+            p {
+            	font-size:16px;
+            }
+            h1 	{
+                    color: #FFFFFF;
+                    font-size: 450%;
+                    margin-bottom: 0;
+            }
+            h4 	{
+                    margin-top: 0;
+                    color: #B2DFDB;
+                    font-size: 150%;
+            }
+            .header {
+                background-color: #009688;
+                padding: 20px;
+                text-align: center;
+            }
+            .footer {
+                background-color: #009688;
+                position:absolute;
+                bottom:0;
+                width:100%;
+                height:30px;
+                text-align: center;
+                color: #B2DFDB;
+                text-decoration: none;
+                padding-top: 10px;
+            }
+            .footer a {
+                text-decoration: none;
+                color: white;
+            }
+            .navigation {
+                font-family: 'Roboto Condensed', sans-serif;
+                list-style:none;
+                margin:0;
+                padding:0;
+                text-align:center;
+            }
+            .navigation ul {
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #00796B;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            li {
+                 display:inline;
+            }
+
+            .navigation a {
+                display:inline-block;
+                padding:10px;
+                text-decoration: none;
+                color:white;
+                padding: 20px;
+            }
+
+            .navigation li a:hover {
+                background-color: #B2DFDB;
+                color: black;
+            }
+            .content {
+                text-align: center;
+                padding-top: 20px;
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-bottom: 20px;
+            }
+            .content h2 {
+                font-size: 200%;
+            }
+            .content p {
+                color: #757575;
+                font-size: 110%;
+            }
+            .content a {
+                color: black;
+                text-decoration: none;
+            }
+            .content a:hover {
+                color: #607D8B;
+            }
+            .buttons {
+                display: flex;
+                justify-content: center;
+            }
+            button {
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                background-color: #607D8B;
+                color: #FFFFFF;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 150%;
+                border: 0;
+                cursor: pointer;
+            }
+            button:hover {
+                padding-left: 95px;
+                padding-right: 95px;
+                padding-top: 45px;
+                padding-bottom: 45px;
+                background-color: #FFFFFF;
+                color: #607D8B;
+                border: 5px solid;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 150%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="full">
+            <div class="header">
+                <h1>What Track?</h1>
+                <h4>A simple tool to discover new music!</h4>
+            </div>
+            <div class="navigation">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="https://last.fm" target="_blank">Last.fm</a></li>
+                  <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Choose your path, fellow traveller and music nerd:</h2>
+                <p> If you're searching for some new tunes or Gods, you've come to the right place.<br>If you want to know what sorcery this is, go to the <a href="about.html" target="_blank">about</a> page. </p>
+                <br>
+                <br>
+                <div class="buttons">
+                    <button type="button" name="top_artists" onclick="window.location.href='charts_topartists.php'">Top Artists</button>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <button type="button" name="top_tracks" onclick="window.location.href='charts_toptracks.php'">Top Tracks</button>
+                </div>
+
+            </div>
+            <div class="footer">
+                Created randomly by <a href="http://deepanshkhurana.com" target="_blank">Deepansh Khurana</a>
+            </div>
+        </div>
+    </body>
+</html>
